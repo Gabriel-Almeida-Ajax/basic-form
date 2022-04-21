@@ -1,0 +1,113 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: var(--cl-cian-light);
+  width: 30%;
+  height: 80%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.toolbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+
+  background: var(--bg-white);
+}
+
+.space {
+  width: 100%;
+  height: 100%;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.btn {
+  border-radius: 50%;
+  background-color: var(--cl-cian-light);
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  cursor: pointer;
+
+}
+
+.btn.active {
+  background-color: var(--bg-green-darker);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: var(--cl-cian-dark);
+}
+
+.form-control {
+  width: 100%;
+  height: calc(100% - 50px);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-inputs > input {
+  width: 80%;
+  height: 35px;
+  padding: 0 10px;
+  margin: 5px;
+  border-radius: 3px;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.form-inputs > input:focus {
+  border: 2px solid var(--bg-green-dark);
+  box-shadow: 0px 0px 15px -5px var(--bg-green-dark);
+}
+
+img {
+  padding-top: 30px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  font-size: medium;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--cl-cian-dark);
+}
+
+button.login {
+  margin-top: 10px;
+  color: white;
+  background-color: var(--bg-green-light-2);
+}
